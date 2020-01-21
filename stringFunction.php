@@ -10,7 +10,7 @@ echo "Reverse : ".strrev($str)."<br>";
 echo "Position of 'this' : ".strpos($str,"this")."<br>";
 //add slash before given letter
 $str1=addcslashes($str,"t");
-echo $str1."<br>";
+echo $str1."<br>"; 
 //add slashes before quotes
 $str1=addslashes($str);
 echo $str1."<br>";
