@@ -4,7 +4,7 @@
 </head>
 <body>
 	<form method="post">
-		Enter a numbee : <input type="text" name="number"/>
+		Enter a number : <input type="text" name="number"/>
 		<button type="submit" name="submit">Submit</button>
 	</form>
 </body>
