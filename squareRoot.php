@@ -4,7 +4,7 @@
 </head>
 <body>
 	<form method="post">
-		Enter a number : <input type="text" name="number"/>
+		Enter a numbee : <input type="text" name="number"/>
 		<button type="submit" name="submit">Submit</button>
 	</form>
 </body>
@@ -71,11 +71,12 @@ if(isset($_POST['submit']))
 		}
 		$k++;
 	}
-	$res[$k]=".";
-	$res[++$k]=0;
 	if($rem>0)
 	{
-		for($i=0;$i<3;$i++)
+		$res[$k]=".";
+		$res[++$k]=0;
+	
+		for($i=0;$i<20;$i++)
 		{
 			$did=$rem*100;
 				for($j=1;$j<=9;$j++)
@@ -91,7 +92,7 @@ if(isset($_POST['submit']))
 				{
 					$rem=$did-(($div*10+$res[$k])*$res[$k]);
 				}		
-			$div=$div*10+$res[$k];
+			$div=$div*10+2*$res[$k];
 			$k++;
 		}
 	}
