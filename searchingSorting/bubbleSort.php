@@ -1,0 +1,16 @@
+<?php
+$arr=array(8,6,4,12,2,13,3);
+for($i=0;$i<count($arr);$i++)
+{
+    for($j=0;$j<count($arr)-$i-1;$j++)
+    {
+        if($arr[$j]>$arr[$j+1])
+        {
+            $temp=$arr[$j];
+            $arr[$j]=$arr[$j+1];
+            $arr[$j+1]=$temp;
+        }
+    }
+}
+print_r($arr);
+?>
